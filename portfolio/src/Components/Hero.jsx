@@ -1,19 +1,35 @@
+import { ReactTyped } from "react-typed";
 
 export default function Hero() {
     return (
-        <>
-            <div className="flex flex-col items-center px-4 py-12 mx-auto bg-gray-100 md:flex-row sm:px-6 lg:px-8">
-                <div className="mb-4 md:w-1/2 md:mb-0">
-                    <p className="mb-4 text-sm text-gray-600 ">Flutter | React Native</p>
-                    <h1 className="mb-2 text-3xl font-bold text-gray-800">Mobile Developer</h1>
-                    <p className="mb-4 text-sm text-gray-600">This is a template Figma file, turned into code using Anima. 
-    Learn more at AnimaApp.com</p>
-                    <button className="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-600">Contact</button>
+        <div className="text-white">
+            <div className="max-w-[800] mt-[-100] w-full h-screen mx-auto text-center flex flex-col">
+                <p className="text-[rgb(0,223,154)] p-2 font-bold ">Crafting digital experiences</p>
+                <h1 className="py-4 text-4xl font-bold uppercase md:text-7xl sm:text-6xl md:py-6 sm:py-5">Web & App Development</h1>
+                <div className="flex items-center justify-center">
+                    <p className="text-xl font-bold md:text-5xl sm:text-4xl">Fast, flexible, solutions for </p>
+                    <ReactTyped 
+                        className="pl-2 text-xl font-bold uppercase md:pl-4 md:text-5xl sm:text-4xl"
+                        strings={[
+                            "websites",
+                            "applications",
+                            "digital products",
+                          ]}
+                          typeSpeed={120}
+                          backSpeed={140}
+                          loop
+                    />
+                    
                 </div>
-                <div className="flex justify-center md:w-1/2">
-                    <img src="./src/assets/foto_alif.png" alt="Gambar Hero" className="w-full rounded-lg" style={{ width: '250px' }}/>
-                </div>
+                <p className="py-2 font-bold text-gray-500 md:text-2xl sm:text-x">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, esse.</p>
+                    <button className="bg-[rgb(0,223,154)] py-3 text-black w-[200px] rounded-md font-medium my-6 mx-auto ">
+                        Learn More
+                    </button>
             </div>
-        </>
+        </div>
     );
 }
+
+//? Noted
+//* npm install react-typed --save
+// Menambahkannya untuk mendapatkan effek typed yang ada pada react
